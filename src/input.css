@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@layer base {
+
+    .montserrat {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+    }
+}
