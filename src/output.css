@@ -299,6 +299,9 @@
   .-mt-1 {
     margin-top: calc(var(--spacing) * -1);
   }
+  .-mt-1\.5 {
+    margin-top: calc(var(--spacing) * -1.5);
+  }
   .-mt-2 {
     margin-top: calc(var(--spacing) * -2);
   }
@@ -641,6 +644,14 @@
   }
   .self-start {
     align-self: flex-start;
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .overflow-clip {
+    overflow: clip;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -1114,6 +1125,16 @@
   }
   .max-\[500px\]\:hidden {
     @media (width < 500px) {
+      display: none;
+    }
+  }
+  .max-\[450px\]\:hidden {
+    @media (width < 450px) {
+      display: none;
+    }
+  }
+  .max-\[400px\]\:hidden {
+    @media (width < 400px) {
       display: none;
     }
   }
