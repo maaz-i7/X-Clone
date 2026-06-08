@@ -306,9 +306,6 @@
   .mt-auto {
     margin-top: auto;
   }
-  .mr-0 {
-    margin-right: calc(var(--spacing) * 0);
-  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -317,9 +314,6 @@
   }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
-  }
-  .mb-1 {
-    margin-bottom: calc(var(--spacing) * 1);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -351,17 +345,8 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-7 {
     height: calc(var(--spacing) * 7);
-  }
-  .h-8 {
-    height: calc(var(--spacing) * 8);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -369,17 +354,11 @@
   .h-13 {
     height: calc(var(--spacing) * 13);
   }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
-  }
   .h-\[0\.2px\] {
     height: 0.2px;
   }
   .h-\[1px\] {
     height: 1px;
-  }
-  .h-\[20px\] {
-    height: 20px;
   }
   .h-\[80vh\] {
     height: 80vh;
@@ -569,21 +548,9 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
-  .border-t-1 {
-    border-top-style: var(--tw-border-style);
-    border-top-width: 1px;
-  }
-  .border-t-2 {
-    border-top-style: var(--tw-border-style);
-    border-top-width: 2px;
-  }
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .border-b-2 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
   }
   .border-blue-500 {
     border-color: var(--color-blue-500);
@@ -611,9 +578,6 @@
   }
   .bg-\[\#16181c\] {
     background-color: #16181c;
-  }
-  .bg-amber-50 {
-    background-color: var(--color-amber-50);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -719,12 +683,6 @@
   }
   .text-\[10px\] {
     font-size: 10px;
-  }
-  .text-\[12px\] {
-    font-size: 12px;
-  }
-  .text-\[13px\] {
-    font-size: 13px;
   }
   .text-\[14px\] {
     font-size: 14px;
@@ -882,18 +840,13 @@
       display: none;
     }
   }
+  .max-\[500px\]\:flex-col {
+    @media (width < 500px) {
+      flex-direction: column;
+    }
+  }
   .max-\[450px\]\:hidden {
     @media (width < 450px) {
-      display: none;
-    }
-  }
-  .min-\[400px\]\:hidden {
-    @media (width >= 400px) {
-      display: none;
-    }
-  }
-  .min-\[401px\]\:hidden {
-    @media (width >= 401px) {
       display: none;
     }
   }
